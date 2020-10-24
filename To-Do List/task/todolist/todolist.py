@@ -11,8 +11,6 @@ Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
 
-TASKS = ["Do yoga", "Make breakfast", "Learn basics of SQL", "Learn what is ORM"]
-
 
 class Task(Base):
     __tablename__ = 'task'
